@@ -7,23 +7,18 @@
 <body>
     <h1>Welcome to Ajax</h1>
     <script>
-        var obj1 = {
-            "friends": [{
-                "first": "Mike",
-                "last": "Smith"
-            }, {
-                "first": "Jordan",
-                "last": "Jones"
-            }, {
-                "first": "Alice",
-                "last": "Grey"
-            }, {
-                "first": "Stu",
-                "last": "Average"
-            }]
+        var myfriends = {
+            "friends":[
+                {"last":"JONES", "first":"John"},
+                {"last":"Smith", "first":"Agent"},
+                {"last":"Orange", "first":"Light"},
+                {"last":"Blue", "first":"Deep"},
+            ]
         };
-
-        console.log(person);
+        var users = myfriends.friends;
+        for(i =0; i<myfriends.friends.length; i++){
+            console.log(myfriends.friends[i].first);
+        }
     </script>
 
 </body>
